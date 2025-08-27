@@ -20,7 +20,7 @@ for(let copyButton of copyBtns){
     copyButton.addEventListener('click', function(){
         const helpNumber = copyButton.parentNode.parentNode.children[3].innerText;
         console.log(helpNumber)
-        alert('Copied: ' + helpNumber)
+        alert('Number copied: ' + helpNumber)
         const copyCount = copyButton.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[1].children[2].children[0];
         let count = parseInt(copyCount.innerText);
         count += 1;
@@ -44,7 +44,7 @@ for(let callButton of callBtns){
         const coinCount = callButton.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[1].children[1].children[0];
         let count = parseInt(coinCount.innerText);
         if(count < 20){
-            alert('Do not have enough coin');
+            alert('You not have enough coin to make a call. You need at least 20 coins to make a call.');
             return;
         }
         count -=20;
