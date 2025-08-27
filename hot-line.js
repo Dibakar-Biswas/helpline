@@ -55,7 +55,7 @@ for(let callButton of callBtns){
 
         const newHistory = document.createElement('div');
         newHistory.innerHTML = `
-                    <div class="flex justify-between items-center rounded-lg bg-white p-4">
+                    <div class="flex justify-between items-center rounded-lg bg-white p-1 gap-1 lg:p-4">
                         <div>
                             <h1>${helpHeading}</h1>
                             <p>${helpNumber}</p>
